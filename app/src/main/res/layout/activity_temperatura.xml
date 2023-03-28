@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/backgroud">
+
+    <ImageView
+        android:id="@+id/imagem"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="70dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logotipo_cadastro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="300dp"
+        />
+    <TextView
+        android:id="@+id/temp"
+        style="@style/TextView"
+        android:text="TEMPERATURA"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textSize="25dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imagem"
+        />
+
+    <ImageView
+        android:id="@+id/img_temp"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/icone_temperatura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/temp" />
+
+    <TextView
+        android:id="@+id/media_hora"
+        style="@style/fundo_modulo"
+        android:layout_width="140dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:text="MÉDIA (1H): "
+        android:textColor="@color/White"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_temp"
+        />
+    <TextView
+        android:id="@+id/media_hora_valor_temp"
+        style="@style/fundo_valores_sensores"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/White"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_temp"
+        app:layout_constraintStart_toEndOf="@id/media_hora"
+        android:layout_width="195dp"
+        />
+    <TextView
+        android:id="@+id/media_dia"
+        style="@style/fundo_modulo"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:text="MÉDIA (24H): "
+        android:textColor="@color/White"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/media_hora"
+        />
+    <TextView
+        android:id="@+id/media_dia_valor_temp"
+        style="@style/fundo_valores_sensores"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/White"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/media_dia"
+        app:layout_constraintTop_toBottomOf="@id/media_hora"
+        android:layout_width="185dp"
+        />
+
+    <TextView
+        android:id="@+id/ultima_crc"
+        style="@style/fundo_modulo"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:text="ULTIMA CORREÇÃO: "
+        android:textColor="@color/White"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/media_dia"
+        />
+    <TextView
+        android:id="@+id/ult_oco_valor_temp"
+        style="@style/fundo_valores_sensores"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/White"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ultima_crc"
+        app:layout_constraintTop_toBottomOf="@id/media_dia"
+        android:layout_width="135dp"
+        />
+
+    <TextView
+        android:id="@+id/modulo"
+        style="@style/fundo_modulo"
+        android:layout_width="110dp"
+        android:layout_marginTop="5dp"
+        android:text="MÓDULO: "
+        android:layout_marginEnd="170dp"
+        android:textColor="@color/White"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ultima_crc"
+        />
+    <TextView
+        android:id="@+id/valor_modulo_temp"
+        style="@style/fundo_valores_sensores"
+        android:layout_width="225dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/White"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ultima_crc"
+        app:layout_constraintStart_toEndOf="@+id/modulo"
+        />
+
+    <Button
+        android:id="@+id/GraficoMedias_temp"
+        android:textColor="@color/White"
+        android:textStyle="bold"
+        android:textSize="17.5dp"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="96dp"
+        android:layout_marginTop="30dp"
+        android:text="Gráficos de Médias"
+        android:background="@color/Blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/modulo" />
+
+    <Button
+        android:id="@+id/Botao_voltar_t"
+        style="@style/ButtonEsq1"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="40dp"
+        android:text="Voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Botao_atualizar_t"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        />
+
+    <Button
+        android:id="@+id/Botao_atualizar_t"
+        style="@style/ButtonDir1"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="40dp"
+        android:text="Atualizar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Botao_voltar_t"
+        tools:ignore="MissingConstraints"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

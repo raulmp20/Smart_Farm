@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/backgroud">
+
+    <ImageView
+        android:id="@+id/logotipo_login"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="70dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logotipo_cadastro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="300dp"
+        />
+
+    <TextView
+        android:id="@+id/Tittle_estufas"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:text="NOVA ESTUFA"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logotipo_login" />
+
+    <EditText
+        android:id="@+id/estufa_nome"
+        android:background="@drawable/button_contorno"
+        android:layout_width="310dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:hint="NOME DA ESTUFA"
+        android:imeOptions="actionSend"
+        android:textColorHint="@color/White"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tittle_estufas" />
+
+    <Spinner
+        android:id="@+id/plants_spinner"
+        android:background="@drawable/button_contorno"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        app:layout_constraintTop_toBottomOf="@id/estufa_nome"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

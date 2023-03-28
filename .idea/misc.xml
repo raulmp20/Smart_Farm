@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.159" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/drawable/backgroud.xml" value="0.1945" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/drawable/buttom.xml" value="0.1945" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/drawable/edittext.xml" value="0.1945" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/drawable/fundo.xml" value="0.333" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/drawable/fundo_main.xml" value="0.2915" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/drawable/ic_olho_oculta_senha.xml" value="0.1615" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/drawable/ic_olhos_senha.xml" value="0.1625" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/drawable/icone_app.xml" value="0.1625" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/drawable/sd.xml" value="0.1945" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/drawable/textview.xml" value="0.1" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/drawable/view.xml" value="0.1945" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/layout-w1240dp/activity_login2.xml" value="0.1" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/layout-w936dp/activity_login2.xml" value="0.1" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/layout/$RGKAUVW.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/layout/activity_aerador.xml" value="0.22" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/layout/activity_broker.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/layout/activity_cadastro.xml" value="0.25" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/layout/activity_config.xml" value="0.25" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/layout/activity_controle_sensores.xml" value="0.33" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/layout/activity_indice_calor.xml" value="0.25" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/layout/activity_informacao_sensor.xml" value="0.33" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/layout/activity_login2.xml" value="0.24342701722574797" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/layout/activity_lum_interna.xml" value="0.25" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/layout/activity_luminosidade.xml" value="0.33" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/layout/activity_menu.xml" value="0.22" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/layout/activity_nivel_agua.xml" value="0.33" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/layout/activity_ph.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/layout/activity_sensor_ph.xml" value="0.365625" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/layout/activity_temp_interna.xml" value="0.1" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/layout/activity_temperatura.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/layout/activity_troca_senha.xml" value="0.21" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/layout/activity_umi_ar.xml" value="0.22" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/layout/activity_umi_solo.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/layout/activity_umidade_ar.xml" value="0.365625" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/layout/activity_umidade_solo.xml" value="0.365625" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1945" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/mipmap-anydpi-v26/iconeApp.xml" value="0.1615" />
+        <entry key="..\:/Users/aluno/Desktop/PedroLuis/app/src/main/res/mipmap-anydpi-v26/iconeApp_round.xml" value="0.1615" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

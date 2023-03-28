@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/backgroud">
+
+    <ImageView
+        android:id="@+id/logotipo_login"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="70dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logotipo_cadastro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="300dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textFieldEmailCadastro"
+        android:background="@drawable/button_contorno"
+        android:layout_width="300dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="40dp"
+        android:hint="E-MAIL"
+        app:hintTextColor="@color/White"
+        android:textColorHint="@color/White"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logotipo_login"
+        app:boxBackgroundColor="@color/White"
+        app:startIconTint="@color/White"
+        app:startIconDrawable="@drawable/ic_email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textFieldSenhaCadastro"
+        android:background="@drawable/button_contorno"
+        android:layout_width="300dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="9dp"
+        android:hint="SENHA"
+        app:hintTextColor="@color/White"
+        android:textColorHint="@color/White"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textFieldEmailCadastro"
+        app:boxBackgroundColor="@color/Blue"
+        app:startIconTint="@color/White"
+        app:startIconDrawable="@drawable/ic_password"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/White">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/senhaCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textFieldConfirmSenhaCadastro"
+        android:background="@drawable/button_contorno"
+        android:layout_width="300dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="9dp"
+        android:hint="CONFIRMAR SENHA"
+        app:hintTextColor="@color/White"
+        android:textColorHint="@color/White"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textFieldSenhaCadastro"
+        app:boxBackgroundColor="@color/Blue"
+        app:startIconTint="@color/White"
+        app:startIconDrawable="@drawable/ic_password"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/White">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/confirmSenhaCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <Button
+        android:id="@+id/fazer_cadastro"
+        style="@style/Button_Cadastro"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="50dp"
+        android:text="CADASTRAR"
+        android:textColor="@color/White"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textFieldConfirmSenhaCadastro" />
+
+    <!--Logo Smart Farm-->
+    <ImageView
+        android:id="@+id/logotipo_fundo"
+        android:layout_marginTop="50dp"
+        android:layout_height="140dp"
+        android:src="@drawable/logotipo_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fazer_cadastro"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="300dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

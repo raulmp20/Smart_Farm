@@ -1,0 +1,18 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+/*  SE EU DEVOLVER ISSO AO COD DEVO REMOVER O "allprojects" em "build.gradle(Pedro Luis)
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+*/
+rootProject.name = "Pedro Luis"
+include ':app'

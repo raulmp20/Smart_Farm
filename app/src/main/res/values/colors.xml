@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Declaração das cores que serão usadas-->
+    <color name="Black">#FF000000</color>
+    <color name="White">#FFFFFF</color>
+    <color name="White2">#AC9E95</color>
+    <color name="Red">#FC784E</color>
+    <color name="orange">#F68713</color>
+    <color name="Yellow">#FFC107</color>
+    <color name="Light_Blue">#00BCD4</color>
+    <color name="Blue">#005ED1</color>
+    <color name="DarkBlue">#0E3F7C</color>
+    <color name="Green">#4CAF50</color>
+    <color name="Pink">#3860D6</color>
+    <color name="Purple">#5509E4</color>
+    <color name="Silver">#757575</color>
+    <color name="purple_200">#564646</color>
+    <color name="purple_700">#700</color>
+    <color name="teal_200">#6C481B</color>
+    <color name="DarkGreen">#206106</color>
+
+</resources>

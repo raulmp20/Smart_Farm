@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "518837200297",
+    "firebase_url": "https://app-foda-default-rtdb.firebaseio.com",
+    "project_id": "app-foda",
+    "storage_bucket": "app-foda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:518837200297:android:057b783b47105bb59450b8",
+        "android_client_info": {
+          "package_name": "com.example.pedroluis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "518837200297-1cn7pml39d0gsnhb9g5gee2iiaildtle.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDaHOJ1eUvaQYgBS3hTEo02gLhJnAjNlY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "518837200297-1cn7pml39d0gsnhb9g5gee2iiaildtle.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

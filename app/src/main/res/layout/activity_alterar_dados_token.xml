@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud">
+
+    <ImageView
+        android:id="@+id/logotipo_alterar_dados_token"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="70dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logotipo_cadastro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="300dp"
+        />
+
+    <TextView
+        android:id="@+id/ADTTittle"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="@string/para_sua_segurança"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logotipo_alterar_dados_token" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Token_ADT"
+        android:background="@drawable/button_contorno"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:hint="TOKEN"
+        app:hintTextColor="@color/White"
+        android:textColorHint="@color/White"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ADTTittle"
+        app:boxBackgroundColor="@color/Blue"
+        app:startIconTint="@color/White"
+        app:startIconDrawable="@drawable/ic_token">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tokenCadastroo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/ReenviarCodigo_ADT"
+        android:textColor="@color/White"
+        android:textStyle="bold"
+        android:textSize="17.5dp"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="96dp"
+        android:layout_marginTop="30dp"
+        android:text="REENVIAR CÓDIGO"
+        android:background="@color/Blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Token_ADT" />
+
+    <Button
+        android:id="@+id/Botao_Cancelar_ADT"
+        style="@style/ButtonEsq1"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="40dp"
+        android:text="SAIR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Botao_Confirmar_ADT"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        />
+
+    <Button
+        android:id="@+id/Botao_Confirmar_ADT"
+        style="@style/ButtonDir1"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="40dp"
+        android:text="CONFIRMAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Botao_Cancelar_ADT"
+        tools:ignore="MissingConstraints"
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

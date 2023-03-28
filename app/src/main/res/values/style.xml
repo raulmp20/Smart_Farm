@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Estou definindo uma constante de estilo chamada text view, que segue-->
+    <!--No primeiro item estou puxando as informações do arquivo textview que criei em drawable,
+     ou seja, o estilo já ta pronto, basta apenas dizer o tamanho dele-->
+    <!--layout_height e layout_width definem a altura e a largura respectivamente-->
+    <!--padding: define uma a distância entre o conteúdo de um elemento e suas bordas. (padding-top, padding-right, padding-bottom, padding-left)-->
+    <style name="pagina_incial">
+        <item name="android:background">@drawable/logotipo_main</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+    </style>
+    <style name="TextView">
+        <item name="android:layout_width">
+            250dp
+        </item>
+        <item name="android:layout_height">
+            40dp
+        </item>
+        <item name="android:layout_marginTop">
+            10dp
+        </item>
+        <item name="android:textSize">
+            25sp
+        </item>
+        <item name="android:textStyle">
+            bold
+        </item>
+    </style>
+    <style name="TextView2">
+        <item name="android:background">
+            @drawable/backgroud
+        </item>
+        <item name="android:layout_width">
+            match_parent
+        </item>
+        <item name="android:layout_height">
+            60dp
+        </item>
+
+    </style>
+
+    <style name="ButtonEsq1">
+        <item name="android:background">@drawable/button_cadastro</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">120dp</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="android:layout_marginBottom">50dp</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="android:layout_marginStart">40dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ButtonDir1">
+        <item name="android:background">@drawable/buttom</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">120dp</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="android:layout_marginBottom">50dp</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="android:layout_marginEnd">40dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!--Estou definindo uma constante de estilo chamada EditText-->
+    <!--No primeiro item estou puxando as informações do arquivo edittext que criei em drawable,
+     ou seja, o estilo já ta pronto, basta apenas dizer o tamanho dele-->
+    <style name="EditText">
+        <item name="android:background">
+            @drawable/edittext
+        </item>
+        <item name="android:layout_width">
+            match_parent
+        </item>
+        <item name="android:layout_height">
+            40dp
+        </item>
+    </style>
+    <!--Estou definindo uma constante de estilo chamada Button,
+     ou seja, o estilo já ta pronto, basta apenas dizer o tamanho dele-->
+
+    <style name="inputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_height">75dp</item>
+        <item name="android:layout_width">300dp</item>
+        <item name="boxBackgroundColor">@color/Blue</item>
+        <item name="startIconTint">@color/White</item>
+        <item name="startIconDrawable">@drawable/ic_person</item>
+    </style>
+
+    <style name="recSenha">
+        <item name="android:background">
+        </item>
+        <item name="android:textColor">
+            @color/White
+        </item>
+        <item name="android:textStyle">
+            bold
+        </item>
+        <item name="android:textSize">
+            17.5sp
+        </item>
+    </style>
+
+    <style name="Button_Login">
+        <item name="android:background">
+            @drawable/buttom
+        </item>
+        <item name="android:layout_width">
+            130dp
+        </item>
+        <item name="android:layout_height">
+            30dp
+        </item>
+        <item name="android:textSize">
+            18sp
+        </item>
+    </style>
+    <!--Fundo botão de cadastro-->
+    <style name="Button_Cadastro">
+        <item name="android:background">
+            @drawable/button_cadastro
+        </item>
+        <item name="android:layout_width">
+            match_parent
+        </item>
+        <item name="android:layout_height">
+            30dp
+        </item>
+        <item name="android:textSize">
+            17sp
+        </item>
+    </style>
+
+
+    <!--Estou definindo uma constante de estilo chamada Button,
+ ou seja, o estilo já ta pronto, basta apenas dizer o tamanho dele-->
+    <style name="container">
+        <item name="android:background">
+            @drawable/edittext
+        </item>
+        <item name="android:layout_width">
+            match_parent
+        </item>
+        <item name="android:layout_height">
+            40dp
+        </item>
+    </style>
+    <!--Check Box -->
+    <style name="CheckBox">
+        <item name="android:layout_width">
+            match_parent
+        </item>
+        <item name="android:layout_height">
+            50dp
+        </item>
+    </style>
+
+    <!--Fundo main-->
+    <style name="fundo_main">
+        <item name="android:layout_toStartOf">
+            @id/match_parent
+        </item>
+        <item name="android:layout_toEndOf">
+            @id/match_parent
+        </item>
+        <item name="android:layout_height">
+            500dp
+        </item>
+
+    </style>
+    <!--Logotipo_fundo main-->
+    <style name="logotipo_fundo_main">
+        <item name="android:layout_toStartOf">
+            @id/match_parent
+        </item>
+        <item name="android:layout_toEndOf">
+            @id/match_parent
+        </item>
+        <item name="android:layout_height">
+            500dp
+        </item>
+    </style>
+    <!--Modulo dos sensores-->
+    <style name="fundo_modulo">
+        <item name="android:layout_marginStart">
+            30dp
+        </item>
+        <item name="android:layout_toEndOf">
+            @id/match_parent
+        </item>
+        <item name="android:layout_height">
+            40dp
+        </item>
+        <item name="android:layout_width">
+            wrap_content
+        </item>
+    </style>
+    <!--Valores dos sensores-->
+    <style name="fundo_valores_sensores">
+        <item name="android:layout_marginEnd">
+            35dp
+        </item>
+        <item name="android:layout_height">
+            40dp
+        </item>
+        <item name="android:layout_marginStart">
+            40dp
+        </item>
+        <item name="android:textSize">
+            17sp
+        </item>
+        <item name="android:layout_width">
+            wrap_content
+        </item>
+    </style>
+    <!--Progress Bar-->
+    <style name="ProgressBar">
+        <item name="android:layout_height">
+            30dp
+        </item>
+        <item name="android:layout_width">
+            30dp
+        </item>
+    </style>
+
+    <style name="View">
+        <item name="android:background">@drawable/view</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+</resources>

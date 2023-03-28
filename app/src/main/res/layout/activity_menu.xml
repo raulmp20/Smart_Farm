@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backgroud">
+
+    <ImageView
+        android:id="@+id/imagem"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="70dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logotipo_cadastro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="300dp"
+        />
+
+    <ImageButton
+        android:id="@+id/config"
+        android:background=""
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="250dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icone_configuracao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imagem"
+        />
+
+    <Button
+        android:id="@+id/button_config"
+        style="@style/recSenha"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="210dp"
+        android:text="CONFIGURAÇÕES"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/config" />
+
+    <ImageButton
+        android:id="@+id/ph"
+        android:background=""
+        android:scaleType="fitCenter"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/icone_ph"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imagem"
+        />
+
+    <Button
+        android:id="@+id/button_ph"
+        style="@style/recSenha"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="225dp"
+        android:layout_marginEnd="20dp"
+        android:text="PH DA solução"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/config" />
+
+    <ImageButton
+        android:id="@+id/umi_ar"
+        android:background=""
+        android:scaleType="fitCenter"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="250dp"
+        android:src="@drawable/icone_umidadear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_config"
+        />
+
+    <Button
+        android:id="@+id/button_umi_ar"
+        style="@style/recSenha"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="220dp"
+        android:text="UMIDADE DO AR"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/umi_ar" />
+
+    <ImageButton
+        android:id="@+id/temp"
+        android:background=""
+        android:scaleType="fitCenter"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/icone_temperatura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_ph"
+        />
+
+    <Button
+        android:id="@+id/button_temp"
+        style="@style/recSenha"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="225dp"
+        android:layout_marginEnd="20dp"
+        android:text="TEMPERATURA"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/temp" />
+
+    <ImageButton
+        android:id="@+id/umi_substrato"
+        android:background=""
+        android:scaleType="fitCenter"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="250dp"
+        android:src="@drawable/icone_umidadosolo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_umi_ar" />
+
+    <Button
+        android:id="@+id/button_umi_substrato"
+        style="@style/recSenha"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="220dp"
+        android:text="UMIDADE DO SUBSTRATO"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/umi_substrato" />
+
+    <ImageButton
+        android:id="@+id/lumi"
+        android:background=""
+        android:scaleType="fitCenter"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/icone_luminosidade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_temp" />
+
+    <Button
+        android:id="@+id/button_lumi"
+        style="@style/recSenha"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="225dp"
+        android:layout_marginEnd="20dp"
+        android:text="LUMINOSIDADE"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lumi" />
+
+
+
+    <Button
+        android:id="@+id/button_sair"
+        style="@style/Button_Cadastro"
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="120dp"
+        android:text="Sair"
+        android:textColor="@color/White"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_umi_substrato" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfigActivity"
+    android:background="@drawable/backgroud">
+
+    <ImageView
+        android:id="@+id/imagem"
+        style="@style/logotipo_fundo_main"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/logotipo_cadastro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/config"
+        style="@style/TextView"
+        android:text="CONFIGURAÇÕES"
+        android:textColor="@color/White"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imagem"/>
+
+    <ImageView
+        android:id="@+id/img_config"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:src="@drawable/icone_configuracao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/config" />
+
+    <EditText
+        android:id="@+id/email_ref"
+        android:layout_width="310dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:hint="EMAIL"
+        android:imeOptions="actionSend"
+        android:textColorHint="@color/White"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_config" />
+
+    <Button
+        android:id="@+id/button_envia_pin"
+        android:layout_marginTop="10dp"
+        style="@style/Button_Login"
+        android:text="Enviar Pin"
+        android:textColor="@color/White"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email_ref"
+        tools:ignore="TouchTargetSizeCheck"
+        />
+
+    <EditText
+        android:id="@+id/senha_atualiza"
+        android:layout_width="310dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:hint="SENHA"
+        android:imeOptions="actionSend"
+        android:inputType="textPassword"
+        android:textColorHint="@color/White"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_envia_pin" />
+    <!--Uma checkbox para esconder a senha quando escrita-->
+    <CheckBox
+        android:id="@+id/oculta_senhaConfig"
+        style="@style/CheckBox"
+        android:layout_height="48dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="160dp"
+        android:buttonTint="@color/White"
+        android:text="Mostrar senha"
+        android:textAlignment="textStart"
+        android:textColor="@color/White"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/senha_atualiza" />
+
+    <EditText
+        android:id="@+id/confirm_senha_atualiza"
+        android:layout_width="310dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="50dp"
+        android:hint="CONFIRMAR SENHA"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/senha_atualiza"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColorHint="@color/White"
+        android:imeOptions="actionSend"
+        />
+    <!--Uma checkbox para esconder a senha quando escrita-->
+    <CheckBox
+        android:id="@+id/oculta_confirmSenhaConfig"
+        style="@style/CheckBox"
+        android:layout_height="48dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="160dp"
+        android:buttonTint="@color/White"
+        android:text="Mostrar senha"
+        android:textAlignment="textStart"
+        android:textColor="@color/White"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/confirm_senha_atualiza" />
+
+    <EditText
+        android:id="@+id/confirm_pin_atualiza"
+        android:layout_width="310dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="50dp"
+        android:hint="PIN"
+        android:imeOptions="actionSend"
+        android:inputType="number"
+        android:textColorHint="@color/White"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_senha_atualiza" />
+
+    <Button
+        android:id="@+id/button_salvar_config"
+        style="@style/Button_Login"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="110dp"
+        android:text="Salvar"
+        android:textColor="@color/White"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/confirm_pin_atualiza"
+        tools:ignore="TouchTargetSizeCheck"
+        />
+
+    <Button
+        android:id="@+id/button_voltar_config"
+        style="@style/Button_Login"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_width="110dp"
+        android:text="VOLTAR"
+        android:textColor="@color/White"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/confirm_pin_atualiza"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

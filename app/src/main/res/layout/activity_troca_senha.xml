@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfigActivity"
+    android:background="@drawable/backgroud">
+
+    <ImageView
+        android:id="@+id/imagem"
+        style="@style/logotipo_fundo_main"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_margin="50dp"
+        android:src="@drawable/logotipo_cadastro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/config"
+        style="@style/TextView"
+        android:text="Alterar Dados"
+        android:textColor="@color/White"
+        android:layout_width="280dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_config"/>
+
+    <ImageView
+        android:id="@+id/img_config"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/icone_configuracao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagem" />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textFieldChangePassword"
+        android:layout_width="330dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="50dp"
+        android:hint="NOVA SENHA"
+        app:hintTextColor="@color/White"
+        android:textColorHint="@color/White"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/config"
+        app:boxBackgroundColor="@color/Blue"
+        app:startIconTint="@color/White"
+        app:startIconDrawable="@drawable/ic_password"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/White">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/changePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textFieldConfirmChangePassword"
+        android:layout_width="330dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="9dp"
+        android:hint="CONFIRMAR SENHA"
+        app:hintTextColor="@color/White"
+        android:textColorHint="@color/White"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textFieldChangePassword"
+        app:boxBackgroundColor="@color/Blue"
+        app:startIconTint="@color/White"
+        app:startIconDrawable="@drawable/ic_password"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/Blue">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/confirmChangePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/Botao_Sair_ADT"
+        style="@style/ButtonEsq1"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="40dp"
+        android:text="CANCELAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Botao_Salvar_ADT"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        />
+
+    <Button
+        android:id="@+id/Botao_Salvar_ADT"
+        style="@style/ButtonDir1"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="40dp"
+        android:text="SALVAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Botao_Sair_ADT"
+        tools:ignore="MissingConstraints"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

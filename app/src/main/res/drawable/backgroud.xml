@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+<!--Basicamente estou criando um fundo de tela-->
+<!--gradient: é tipo uma pequena mudança da cor 1 na direção da cor 2-->
+<!--solid: cor única na tela-->
+<!--corners: mexe com os cantos da tela-->
+<!--android:angle="90"; gira o gradiente 90 graus-->
+<!--stroke: é para mexer com a borda, primeiro a cor e depois o width, grossura da linha-->
+    <gradient
+        android:startColor="#2600FF"
+        android:endColor="#00BCD4"
+        android:angle="90"
+        android:type="linear" /><padding
+     /><corners
+    />
+
+</shape>
